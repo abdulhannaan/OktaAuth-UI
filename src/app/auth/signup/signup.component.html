@@ -40,10 +40,11 @@
             I have read and agree to the terms
           </label>
         </div>
-<div class="row px-3">
-  <button type="submit" (click)="signup()" class="btn btn-primary">Sign Up</button>
+        <div class="alert alert-danger" role="alert" *ngIf="message.length > 0">{{message}}</div>
+        <div class="row px-3">
+          <button type="submit" (click)="signup()" class="btn btn-primary">Sign Up</button>
 
-</div>
+        </div>
         <!-- Submit button -->
       </form>
     </div>

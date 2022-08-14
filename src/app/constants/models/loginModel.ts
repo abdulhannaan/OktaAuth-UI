@@ -1,9 +1,9 @@
 export interface loginRequestModel{
-    username : string | null | undefined,
-    password : string | null | undefined
+    username : string,
+    password : string 
 }
 
-export interface loginResponseModel{
-    username : string,
-    password: string
-}
+export class LoginResponse {
+    sessionToken!: string;
+    _embedded!: any;
+  }
